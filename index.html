@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,33 +20,6 @@
             color: white;
             background-color: #101010;
             text-align: center;
-            position: relative;
-            background: radial-gradient(circle, rgba(16, 16, 16, 0.9) 0%, rgba(16, 16, 16, 1) 60%);
-            background-attachment: fixed;
-        }
-
-        /* Create a blurred background image on the sides */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('your-blurred-image-url'); /* Add your blurred photo here */
-            background-size: cover;
-            background-position: center;
-            filter: blur(8px);
-            z-index: -1; /* Place it behind the content */
-        }
-
-        /* Container for the center content */
-        .container {
-            position: relative;
-            z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 50px;
         }
 
         /* Hero Section (Profile) */
@@ -83,8 +57,19 @@
         }
 
         /* Video Section */
+    .video-section iframe {
+    margin-top: 20px; /* Move the video down */
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin-bottom: 30px;
+}
+}
+}
+}
+        }
+
         .video-section iframe {
-            margin-top: 20px;
             width: 100%;
             max-width: 800px;
             height: 450px;
@@ -112,15 +97,16 @@
         }
 
         .portfolio iframe {
-            width: 48%;
+            width: 48%;  /* Adjusted size */
             height: 225px;
             margin-bottom: 20px;
         }
 
         /* About Me Section */
         .about {
-            padding: 50px 20px;
-            background-color: #101010; /* Updated to match surrounding sections */
+    padding: 50px 20px;
+    background-color: #101010; /* Updated to match surrounding sections */
+}
         }
 
         .about h3 {
