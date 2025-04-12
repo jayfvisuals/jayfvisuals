@@ -1,241 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayfvisuals</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayfvisuals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: white;
-            background-color: #101010;
-            text-align: center;
-        }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      background-color: #101010;
+      text-align: center;
+    }
 
-        /* Hero Section (Profile) */
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px 0 20px;
-            flex-direction: column;
-        }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0 20px;
+      flex-direction: column;
+    }
 
-        .profile-container {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 20px;
-            position: relative;
-        }
+    .profile-container {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      position: relative;
+    }
 
-        .profile-img {
-            width: 100%;
-            height: 115%;
-            object-fit: cover;
-            transform: translateY(2%);
-        }
+    .profile-img {
+      width: 100%;
+      height: 115%;
+      object-fit: cover;
+      transform: translateY(5%);
+    }
 
-        .hero h1 {
-            font-family: 'Anton', sans-serif;
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #aaa;
-        }
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
 
-        /* Nav Buttons */
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 20px 0 40px;
-            font-weight: 600;
-        }
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0 40px;
+      font-weight: 600;
+    }
 
-        .nav-buttons a {
-            color: #ff6600;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
+    .nav-buttons a {
+      color: #ff6600;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
 
-        .nav-buttons a:hover {
-            color: #e65c00;
-            text-decoration: underline;
-        }
+    .nav-buttons a:hover {
+      color: #e65c00;
+      text-decoration: underline;
+    }
 
-        /* Video Section */
-        .video-section iframe {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            margin-bottom: 30px;
-        }
+    .video-section iframe {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      margin-bottom: 30px;
+    }
 
-        /* Portfolio Section (Videos) */
-        .portfolio {
-            padding: 50px 20px;
-            background-color: #101010;
-        }
+    .portfolio {
+      padding: 50px 20px;
+      background-color: #101010;
+    }
 
-        .portfolio h3 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
+    .portfolio h3 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
 
-        .portfolio .video-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .portfolio .video-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        .portfolio iframe {
-            width: 48%;
-            height: 225px;
-            margin-bottom: 20px;
-        }
+    .portfolio iframe {
+      width: 48%;
+      height: 225px;
+      margin-bottom: 20px;
+    }
 
-        /* About Me Section */
-        .about {
-            padding: 50px 20px;
-            background-color: #101010;
-        }
+    .about {
+      padding: 50px 20px;
+      background-color: #101010;
+    }
 
-        .about h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+    .about h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
 
-        .about p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .about p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        /* Contact Section */
-        .contact {
-            padding: 50px 20px;
-            background-color: #101010;
-        }
+    .contact {
+      padding: 50px 20px;
+      background-color: #101010;
+    }
 
-        .contact h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+    .contact h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
 
-        .contact a {
-            font-size: 1.1rem;
-            color: #ff6600;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: block;
-        }
+    .contact a {
+      font-size: 1.1rem;
+      color: #ff6600;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+    }
 
-        /* Footer */
-        footer {
-            background-color: #101010;
-            color: white;
-            padding: 20px 0;
-        }
+    footer {
+      background-color: #101010;
+      color: white;
+      padding: 20px 0;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
 
-            .video-section iframe {
-                height: 250px;
-            }
+      .video-section iframe {
+        height: 250px;
+      }
 
-            .portfolio iframe {
-                height: 200px;
-            }
-        }
-    </style>
+      .portfolio iframe {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Hero Section (Profile) -->
-    <section class="hero">
-        <div class="profile-container">
-            <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC05586.jpg?raw=true" alt="Profile Picture" class="profile-img">
-        </div>
-        <h1>Jayfvisuals</h1>
-        <p>Cinematic Videography & Creative Storytelling</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="profile-container">
+      <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC05586.jpg?raw=true" alt="Profile Picture" class="profile-img">
+    </div>
+    <h1>Jayfvisuals</h1>
+    <p>Cinematic Videography & Creative Storytelling</p>
 
-        <!-- Nav Buttons -->
-        <div class="nav-buttons">
-            <a href="/">Home</a>
-            <a href="https://billing.stripe.com/p/login/cN28zmgbLeeZ2be4gg" target="_blank">Manage Subscription</a>
-        </div>
-    </section>
+    <div class="nav-buttons">
+      <a href="/">Home</a>
+      <a href="https://billing.stripe.com/p/login/cN28zmgbLeeZ2be4gg" target="_blank">Manage Subscription</a>
+    </div>
+  </section>
 
-    <!-- Video Section (Promo Video) -->
-    <section class="video-section">
-        <iframe src="https://www.youtube.com/embed/OCvfxm6AbFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+  <!-- Video Section -->
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/OCvfxm6AbFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
 
-    <!-- About Me Section -->
-    <section class="about">
-        <h3>About Me</h3>
-        <p>I am a professional videographer focused on cinematic storytelling. My goal is to capture your vision and bring it to life through high-quality video production, whether for promotional content, events, or personal projects.</p>
+  <!-- About Section -->
+  <section class="about">
+    <h3>About Me</h3>
+    <p>I am a professional videographer focused on cinematic storytelling. My goal is to capture your vision and bring it to life through high-quality video production, whether for promotional content, events, or personal projects.</p>
 
-        <div style="margin-top: 30px;"></div>
+    <div style="margin-top: 30px;"></div>
 
-        <h4>Artists & Collaborations</h4>
-        <p>Over the years, I've had the privilege of working with some incredible talent, including:</p>
-        <p>360, Tech N9ne, Conrad Sewell, Chillinit, Fortay, Joey Cool, and more!</p>
+    <h4>Artists & Collaborations</h4>
+    <p>Over the years, I've had the privilege of working with some incredible talent, including:</p>
+    <p>360, Tech N9ne, Conrad Sewell, Chillinit, Fortay, Joey Cool, and more!</p>
 
-        <div class="artist-photos" style="display: flex; justify-content: center; gap: 20px; max-width: 800px; margin: 20px auto;">
-            <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC06885-2%202.JPG?raw=true" alt="Artist 1" style="width: 48%; height: auto; border-radius: 8px;">
-            <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/360%2032.JPG?raw=true" alt="Artist 2" style="width: 48%; height: auto; border-radius: 8px;">
-        </div>
-    </section>
+    <div class="artist-photos" style="display: flex; justify-content: center; gap: 20px; max-width: 800px; margin: 20px auto;">
+      <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC06885-2%202.JPG?raw=true" alt="Artist 1" style="width: 48%; height: auto; border-radius: 8px;">
+      <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/360%2032.JPG?raw=true" alt="Artist 2" style="width: 48%; height: auto; border-radius: 8px;">
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
-        <h3>YouTube Videos</h3>
-        <div class="video-gallery">
-            <iframe src="https://www.youtube.com/embed/mizqK4JHaYg?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/JduX02ACqsA?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/XEQZBIDUNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/-icX69Et9_s?start=51" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h3>YouTube Videos</h3>
+    <div class="video-gallery">
+      <iframe src="https://www.youtube.com/embed/mizqK4JHaYg?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/JduX02ACqsA?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/XEQZBIDUNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/-icX69Et9_s?start=51" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h3>Contact Me</h3>
-        <a href="mailto:jayfvisuals@outlook.com">Email: jayfvisuals@outlook.com</a>
-        <a href="https://www.youtube.com/@jayfvisuals" target="_blank">YouTube: @jayfvisuals</a>
-        <a href="https://www.instagram.com/jayfvisuals" target="_blank">Instagram: @jayfvisuals</a>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h3>Contact Me</h3>
+    <a href="mailto:jayfvisuals@outlook.com">Email: jayfvisuals@outlook.com</a>
+    <a href="https://www.youtube.com/@jayfvisuals" target="_blank">YouTube: @jayfvisuals</a>
+    <a href="https://www.instagram.com/jayfvisuals" target="_blank">Instagram: @jayfvisuals</a>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Jayfvisuals. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jayfvisuals. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
