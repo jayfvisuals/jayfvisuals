@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,19 +56,8 @@
         }
 
         /* Video Section */
-    .video-section iframe {
-    margin-top: 20px; /* Move the video down */
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    margin-bottom: 30px;
-}
-}
-}
-}
-        }
-
         .video-section iframe {
+            margin-top: 20px;
             width: 100%;
             max-width: 800px;
             height: 450px;
@@ -92,21 +80,20 @@
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
-            max-width: 800px; /* Match the width of the About Me section */
+            max-width: 800px;
             margin: 0 auto;
         }
 
         .portfolio iframe {
-            width: 48%;  /* Adjusted size */
+            width: 48%;
             height: 225px;
             margin-bottom: 20px;
         }
 
         /* About Me Section */
         .about {
-    padding: 50px 20px;
-    background-color: #101010; /* Updated to match surrounding sections */
-}
+            padding: 50px 20px;
+            background-color: #101010;
         }
 
         .about h3 {
@@ -123,7 +110,7 @@
         /* Contact Section */
         .contact {
             padding: 50px 20px;
-            background-color: #101010; /* Updated background color */
+            background-color: #101010;
         }
 
         .contact h3 {
@@ -160,9 +147,36 @@
                 height: 200px;
             }
         }
+
+        /* Manage Subscription Button */
+        .manage-subscription {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .manage-subscription a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .manage-subscription a:hover {
+            background-color: #e65c00;
+        }
     </style>
 </head>
 <body>
+
+    <div class="manage-subscription">
+        <a href="https://billing.stripe.com/p/login/cN28zmgbLeeZ2be4gg" target="_blank">
+            Manage Subscription
+        </a>
+    </div>
 
     <!-- Hero Section (Profile) -->
     <section class="hero">
@@ -177,44 +191,32 @@
     </section>
 
     <!-- About Me Section -->
-   <!-- About Me Section -->
-<!-- About Me Section -->
-<!-- About Me Section -->
-<!-- About Me Section -->
-<!-- About Me Section -->
-<section class="about">
-    <h3>About Me</h3>
-    <p>I am a professional videographer focused on cinematic storytelling. My goal is to capture your vision and bring it to life through high-quality video production, whether for promotional content, events, or personal projects.</p>
+    <section class="about">
+        <h3>About Me</h3>
+        <p>I am a professional videographer focused on cinematic storytelling. My goal is to capture your vision and bring it to life through high-quality video production, whether for promotional content, events, or personal projects.</p>
 
-    <!-- Space between the paragraphs -->
-    <div style="margin-top: 30px;"></div> <!-- Adjust this value to control the gap -->
+        <div style="margin-top: 30px;"></div>
 
-    <!-- Artists & Collaborations -->
-    <h4>Artists & Collaborations</h4>
-    <p>Over the years, I've had the privilege of working with some incredible talent, including:</p>
-    <p>360, Tech N9ne, Conrad Sewell, Chillinit, Fortay, Joey Cool, and more!</p>
+        <h4>Artists & Collaborations</h4>
+        <p>Over the years, I've had the privilege of working with some incredible talent, including:</p>
+        <p>360, Tech N9ne, Conrad Sewell, Chillinit, Fortay, Joey Cool, and more!</p>
 
-    <!-- Photos of Artists -->
-    <div class="artist-photos" style="display: flex; justify-content: center; gap: 20px; max-width: 800px; margin: 20px auto;">
-        <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC06885-2%202.JPG?raw=true" alt="Artist 1" style="width: 48%; height: auto; border-radius: 8px;">
-        <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/360%2032.JPG?raw=true" alt="Artist 2" style="width: 48%; height: auto; border-radius: 8px;">
-    </div>
-</section>
+        <div class="artist-photos" style="display: flex; justify-content: center; gap: 20px; max-width: 800px; margin: 20px auto;">
+            <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC06885-2%202.JPG?raw=true" alt="Artist 1" style="width: 48%; height: auto; border-radius: 8px;">
+            <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/360%2032.JPG?raw=true" alt="Artist 2" style="width: 48%; height: auto; border-radius: 8px;">
+        </div>
+    </section>
 
-  <!-- Portfolio Section (Other Videos) -->
-<section class="portfolio">
-    <h3>Portfolio</h3>
-    <div class="video-gallery">
-        <!-- Video 1 -->
-        <iframe src="https://www.youtube.com/embed/mizqK4JHaYg?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Video 2 -->
-        <iframe src="https://www.youtube.com/embed/JduX02ACqsA?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Video 3 -->
-        <iframe src="https://www.youtube.com/embed/XEQZBIDUNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Video 4 -->
-        <iframe src="https://www.youtube.com/embed/-icX69Et9_s?start=51" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</section>
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h3>Portfolio</h3>
+        <div class="video-gallery">
+            <iframe src="https://www.youtube.com/embed/mizqK4JHaYg?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/JduX02ACqsA?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/XEQZBIDUNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/-icX69Et9_s?start=51" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact">
