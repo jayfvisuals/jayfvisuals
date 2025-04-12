@@ -26,7 +26,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px 0;
+            padding: 50px 0 20px;
             flex-direction: column;
         }
 
@@ -53,6 +53,27 @@
         .hero p {
             font-size: 1.2rem;
             color: #aaa;
+        }
+
+        /* Nav Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0 40px;
+            font-weight: 600;
+        }
+
+        .nav-buttons a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            color: #e65c00;
+            text-decoration: underline;
         }
 
         /* Video Section */
@@ -147,42 +168,21 @@
                 height: 200px;
             }
         }
-
-        /* Manage Subscription Button */
-        .manage-subscription {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .manage-subscription a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff6600;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        .manage-subscription a:hover {
-            background-color: #e65c00;
-        }
     </style>
 </head>
 <body>
-
-    <div class="manage-subscription">
-        <a href="https://billing.stripe.com/p/login/cN28zmgbLeeZ2be4gg" target="_blank">
-            Manage Subscription
-        </a>
-    </div>
 
     <!-- Hero Section (Profile) -->
     <section class="hero">
         <img src="https://github.com/jayfvisuals/jayfvisuals/blob/main/DSC05586.jpg?raw=true" alt="Profile Picture" class="profile-img">
         <h1>Jayfvisuals</h1>
         <p>Cinematic Videography & Creative Storytelling</p>
+        
+        <!-- Nav Buttons -->
+        <div class="nav-buttons">
+            <a href="/">Home</a>
+            <a href="https://billing.stripe.com/p/login/cN28zmgbLeeZ2be4gg" target="_blank">Manage Subscription</a>
+        </div>
     </section>
 
     <!-- Video Section (Promo Video) -->
@@ -208,9 +208,9 @@
     </section>
 
     <!-- Portfolio Section -->
-<section class="portfolio">
-    <h3>YouTube Videos</h3>
-    <div class="video-gallery">
+    <section class="portfolio">
+        <h3>YouTube Videos</h3>
+        <div class="video-gallery">
             <iframe src="https://www.youtube.com/embed/mizqK4JHaYg?start=13" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/JduX02ACqsA?start=33" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/XEQZBIDUNXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
